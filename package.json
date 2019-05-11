@@ -1,0 +1,21 @@
+{
+  "name": "epfl-unit-api",
+  "version": "0.0.1",
+  "description": "EPFL Unit API",
+  "keywords": [
+    "EPFL",
+    "api",
+    "organisation",
+    "unit"
+  ],
+  "author": "William Belle <william.belle@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/innovativeinnovation/epfl-unit-api.git",
+  "engines": {
+    "node": ">=8"
+  },
+  "main": "src/index.js",
+  "scripts": {},
+  "devDependencies": {},
+  "dependencies": {}
+}
