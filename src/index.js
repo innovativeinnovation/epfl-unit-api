@@ -11,8 +11,17 @@ let buildUnitUrl = (unit) => {
   return UNITS_URL + '?q=' + unit;
 };
 
+let buildCodeUrl = (code) => {
+  return UNITS_URL + '?acro=' + code;
+};
+
 let findUnitByName = (unit) => {
   let url = buildUnitUrl(unit);
+  return getUnit(url);
+};
+
+let findUnitByCode = (code) => {
+  let url = buildCodeUrl(code);
   return getUnit(url);
 };
 
@@ -26,3 +35,4 @@ let getUnit = (url) => {
 };
 
 exports.findUnitByName = findUnitByName;
+exports.findUnitByCode = findUnitByCode;

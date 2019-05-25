@@ -46,6 +46,14 @@ epflUnitApi.findUnitByName('exapp').then((unit) => {
 }).catch((err) => {
   console.log(err);
 });
+
+epflUnitApi.findUnitByCode(13030).then((unit) => {
+  console.log(unit.acronym);   // => 'IDEV-FSD'
+  console.log(unit.name);      // => 'SI - Développement Full-Stack'
+  console.log(unit.unitPath);  // => 'EPFL SI SI-IDEV IDEV-FSD'
+}).catch((err) => {
+  console.log(err);
+});
 ```
 
 API
@@ -62,6 +70,18 @@ Returns a Promise with the unit as parameter.
 Type: `string`
 
 The name of an EPFL unit.
+
+### .findUnitByCode(code)
+
+Type: `function`
+
+Returns a Promise with the unit as parameter.
+
+##### code
+
+Type: `number`
+
+The code of an EPFL unit.
 
 Contributing
 ------------
