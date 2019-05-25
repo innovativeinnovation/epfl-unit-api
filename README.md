@@ -47,9 +47,9 @@ epflUnitApi.findUnitByName('exapp').then((unit) => {
   console.log(err);
 });
 
-epflUnitApi.findUnitByCode(13030).then((unit) => {
+epflUnitApi.findUnitByCode(13030, 'en').then((unit) => {
   console.log(unit.acronym);   // => 'IDEV-FSD'
-  console.log(unit.name);      // => 'SI - Développement Full-Stack'
+  console.log(unit.name);      // => 'SI - Full-Stack Development'
   console.log(unit.unitPath);  // => 'EPFL SI SI-IDEV IDEV-FSD'
 }).catch((err) => {
   console.log(err);
@@ -59,7 +59,7 @@ epflUnitApi.findUnitByCode(13030).then((unit) => {
 API
 ---
 
-### .findUnitByName(unit)
+### .findUnitByName(unit, language)
 
 Type: `function`
 
@@ -71,7 +71,14 @@ Type: `string`
 
 The name of an EPFL unit.
 
-### .findUnitByCode(code)
+##### language
+
+Type: `string`  
+Default: `en`
+
+Supported language are English (`en`) and French (`fr`).
+
+### .findUnitByCode(code, language)
 
 Type: `function`
 
@@ -82,6 +89,13 @@ Returns a Promise with the unit as parameter.
 Type: `number`
 
 The code of an EPFL unit.
+
+##### language
+
+Type: `string`  
+Default: `en`
+
+Supported language are English (`en`) and French (`fr`).
 
 Contributing
 ------------

@@ -7,21 +7,21 @@ const got = require('got');
 
 const UNITS_URL = 'https://search-api.epfl.ch/api/unit';
 
-let buildUnitUrl = (unit) => {
-  return UNITS_URL + '?q=' + unit;
+let buildUnitUrl = (unit, language) => {
+  return UNITS_URL + '?q=' + unit + '&hl=' + language;
 };
 
-let buildCodeUrl = (code) => {
-  return UNITS_URL + '?acro=' + code;
+let buildCodeUrl = (code, language) => {
+  return UNITS_URL + '?acro=' + code + '&hl=' + language;
 };
 
-let findUnitByName = (unit) => {
-  let url = buildUnitUrl(unit);
+let findUnitByName = (unit, language = 'en') => {
+  let url = buildUnitUrl(unit, language);
   return getUnit(url);
 };
 
-let findUnitByCode = (code) => {
-  let url = buildCodeUrl(code);
+let findUnitByCode = (code, language = 'en') => {
+  let url = buildCodeUrl(code, language);
   return getUnit(url);
 };
 

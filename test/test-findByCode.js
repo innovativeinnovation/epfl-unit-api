@@ -12,10 +12,22 @@ describe('epfl-unit-api findUnitByCode', function () {
 
   it('should find unit IDEV-FSD', function () {
     return epflUnitApi.findUnitByCode(
-      13030
+      13030,
+      'en'
     ).then((unit) => {
       unit.acronym.should.equal('IDEV-FSD');
-      unit.name.should.equal('SI - Développement Full-Stack');
+      unit.name.trim().should.equal('SI - Full-Stack Development');
+    });
+  });
+
+  it('should find unit IDEV-GE', function () {
+    return epflUnitApi.findUnitByCode(
+      13051
+    ).then((unit) => {
+      unit.acronym.should.equal('IDEV-GE');
+      unit.name.trim().should.equal(
+        'SI - Engineering and Development Administration'
+      );
     });
   });
 });
