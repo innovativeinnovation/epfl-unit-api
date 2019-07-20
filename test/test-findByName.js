@@ -21,9 +21,9 @@ describe('epfl-unit-api findUnitByName', function () {
   });
 
   it('should fail with a wrong service url', (done) => {
-    let epflUnitApiMock = rewire('../src/index.js');
+    const epflUnitApiMock = rewire('../src/index.js');
     epflUnitApiMock.__set__('UNITS_URL', 'foobar');
-    let result = epflUnitApiMock.findUnitByName();
+    const result = epflUnitApiMock.findUnitByName();
     result.then((response) => {
       should.fail();
       done();

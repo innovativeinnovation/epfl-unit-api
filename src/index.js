@@ -7,25 +7,25 @@ const got = require('got');
 
 const UNITS_URL = 'https://search-api.epfl.ch/api/unit';
 
-let buildUnitUrl = (unit, language) => {
+const buildUnitUrl = (unit, language) => {
   return UNITS_URL + '?q=' + unit + '&hl=' + language;
 };
 
-let buildCodeUrl = (code, language) => {
+const buildCodeUrl = (code, language) => {
   return UNITS_URL + '?acro=' + code + '&hl=' + language;
 };
 
-let findUnitByName = (unit, language = 'en') => {
-  let url = buildUnitUrl(unit, language);
+const findUnitByName = (unit, language = 'en') => {
+  const url = buildUnitUrl(unit, language);
   return getUnit(url);
 };
 
-let findUnitByCode = (code, language = 'en') => {
-  let url = buildCodeUrl(code, language);
+const findUnitByCode = (code, language = 'en') => {
+  const url = buildCodeUrl(code, language);
   return getUnit(url);
 };
 
-let getUnit = (url) => {
+const getUnit = (url) => {
   return new Promise((resolve, reject) => {
     got(url).then((response) => {
       const data = JSON.parse(response.body);
