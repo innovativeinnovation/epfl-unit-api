@@ -14,7 +14,7 @@
     <img alt="Coverage Status" src="https://coveralls.io/repos/github/innovativeinnovation/epfl-unit-api/badge.svg?branch=master"/>
   </a>
   <a href="https://david-dm.org/innovativeinnovation/epfl-unit-api">
-    <img alt="Dependency Status" src="https://david-dm.org/innovativeinnovation/epfl-unit-api/status.svg"/>
+    <img alt="Dependencies Status" src="https://david-dm.org/innovativeinnovation/epfl-unit-api/status.svg"/>
   </a>
   <a href="https://raw.githubusercontent.com/innovativeinnovation/epfl-unit-api/master/LICENSE">
     <img alt="Apache License 2.0" src="https://img.shields.io/badge/license-Apache%202.0-blue.svg">
@@ -76,7 +76,7 @@ The name of an EPFL unit.
 Type: `string`  
 Default: `en`
 
-Supported language are English (`en`) and French (`fr`).
+Supported languages are English (`en`) and French (`fr`).
 
 ### .findUnitByCode(code, language)
 
@@ -95,7 +95,7 @@ The code of an EPFL unit.
 Type: `string`  
 Default: `en`
 
-Supported language are English (`en`) and French (`fr`).
+Supported languages are English (`en`) and French (`fr`).
 
 Contributing
 ------------
