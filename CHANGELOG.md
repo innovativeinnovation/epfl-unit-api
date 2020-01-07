@@ -1,6 +1,10 @@
 Changelog
 =========
 
+### v2.0.1 / 2020-01-07
+
+  - Update dependencies
+
 ### v2.0.0 / 2019-12-01
 
   - Drop support for Node.js < 10
