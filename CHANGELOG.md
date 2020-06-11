@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v2.0.3 / 2020-06-11
+
+  - Update dependencies
+  - Limit files included in package
+
 ### v2.0.2 / 2020-04-22
 
   - Update dependencies
