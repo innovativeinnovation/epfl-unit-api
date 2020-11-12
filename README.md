@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://travis-ci.org/innovativeinnovation/epfl-unit-api">
-    <img alt="Travis Status" src="https://travis-ci.org/innovativeinnovation/epfl-unit-api.svg?branch=master">
+  <a href="https://travis-ci.com/innovativeinnovation/epfl-unit-api">
+    <img alt="Travis Status" src="https://travis-ci.com/innovativeinnovation/epfl-unit-api.svg?branch=master">
   </a>
   <a href="https://coveralls.io/github/innovativeinnovation/epfl-unit-api?branch=master">
     <img alt="Coverage Status" src="https://coveralls.io/repos/github/innovativeinnovation/epfl-unit-api/badge.svg?branch=master"/>
