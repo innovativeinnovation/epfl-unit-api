@@ -16,7 +16,7 @@ describe('epfl-unit-api findUnitByCode', function () {
       'en'
     ).then((unit) => {
       unit.acronym.should.equal('IDEV-FSD');
-      unit.name.trim().should.equal('SI - Full-Stack Development');
+      unit.name.trim().should.equal('Full-Stack Development');
     });
   });
 
@@ -26,7 +26,7 @@ describe('epfl-unit-api findUnitByCode', function () {
     ).then((unit) => {
       unit.acronym.should.equal('IDEV-GE');
       unit.name.trim().should.equal(
-        'SI - Engineering and Development Administration'
+        'Engineering and Development Administration'
       );
     });
   });

@@ -11,12 +11,12 @@ const epflUnitApi = require('../src/index.js');
 describe('epfl-unit-api findUnitByName', function () {
   this.timeout(10000);
 
-  it('should find unit EXAPP', function () {
+  it('should find unit ITOP-MWS', function () {
     return epflUnitApi.findUnitByName(
-      'exapp'
+      'mws'
     ).then((unit) => {
       unit.code.should.equal(13033);
-      unit.name.should.equal('SI - Applications');
+      unit.name.should.equal('Middleware Services');
     });
   });
 
