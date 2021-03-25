@@ -39,18 +39,18 @@ Usage
 ```javascript
 const epflUnitApi = require('epfl-unit-api');
 
-epflUnitApi.findUnitByName('exapp').then((unit) => {
+epflUnitApi.findUnitByName('mws').then((unit) => {
   console.log(unit.code);      // => 13033
-  console.log(unit.name);      // => 'SI - Applications'
-  console.log(unit.unitPath);  // => 'EPFL SI SI-EXOP EXAPP'
+  console.log(unit.name);      // => 'Middleware Services'
+  console.log(unit.unitPath);  // => 'EPFL VPO VPO-SI ITOP ITOP-MWS'
 }).catch((err) => {
   console.log(err);
 });
 
 epflUnitApi.findUnitByCode(13030, 'en').then((unit) => {
   console.log(unit.acronym);   // => 'IDEV-FSD'
-  console.log(unit.name);      // => 'SI - Full-Stack Development'
-  console.log(unit.unitPath);  // => 'EPFL SI SI-IDEV IDEV-FSD'
+  console.log(unit.name);      // => 'Full-Stack Development'
+  console.log(unit.unitPath);  // => 'EPFL VPO VPO-SI IDEV IDEV-FSD'
 }).catch((err) => {
   console.log(err);
 });
@@ -107,7 +107,7 @@ See [Contributing](CONTRIBUTING.md).
 Developer
 ---------
 
-  * [William Belle](https://github.com/williambelle)
+* [William Belle](https://github.com/williambelle)
 
 License
 -------
