@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v2.0.5 / 2021-03-26
+
+  - Fix tests after EPFL reorganization
+  - Update and clean dependencies
+  - Migrate from Travis CI to GitHub Actions
+  - Remove badge dependencies
+
 ### v2.0.4 / 2020-11-13
 
   - Update dependencies
