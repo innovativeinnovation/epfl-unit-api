@@ -1,6 +1,12 @@
 Changelog
 =========
 
+### v3.0.0 / 2021-10-01
+
+  - Drop support for Node < 12
+  - Test against Node.js 16
+  - Update dev dependencies
+
 ### v2.0.5 / 2021-03-26
 
   - Fix tests after EPFL reorganization
