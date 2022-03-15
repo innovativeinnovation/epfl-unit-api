@@ -111,6 +111,6 @@ License
 
 Apache License 2.0
 
-(c) William Belle, 2019-2021.
+(c) William Belle, 2019-2022.
 
 See the [LICENSE](LICENSE) file for more details.
