@@ -45,9 +45,9 @@ epflUnitApi.findUnitByName('mws').then((unit) => {
 });
 
 epflUnitApi.findUnitByCode(13030, 'en').then((unit) => {
-  console.log(unit.acronym);   // => 'IDEV-FSD'
+  console.log(unit.acronym);   // => 'ISAS-FSD'
   console.log(unit.name);      // => 'Full-Stack Development'
-  console.log(unit.unitPath);  // => 'EPFL VPO VPO-SI IDEV IDEV-FSD'
+  console.log(unit.unitPath);  // => 'EPFL VPO VPO-SI ISAS ISAS-FSD'
 }).catch((err) => {
   console.log(err);
 });
