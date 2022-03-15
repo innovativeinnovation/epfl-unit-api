@@ -10,23 +10,23 @@ const epflUnitApi = require('../src/index.js');
 describe('epfl-unit-api findUnitByCode', function () {
   this.timeout(10000);
 
-  it('should find unit IDEV-FSD', function () {
+  it('should find unit ISAS-FSD', function () {
     return epflUnitApi.findUnitByCode(
       13030,
       'en'
     ).then((unit) => {
-      unit.acronym.should.equal('IDEV-FSD');
+      unit.acronym.should.equal('ISAS-FSD');
       unit.name.trim().should.equal('Full-Stack Development');
     });
   });
 
-  it('should find unit IDEV-GE', function () {
+  it('should find unit ISCS-GE', function () {
     return epflUnitApi.findUnitByCode(
       13051
     ).then((unit) => {
-      unit.acronym.should.equal('IDEV-GE');
+      unit.acronym.should.equal('ISCS-GE');
       unit.name.trim().should.equal(
-        'Engineering and Development Administration'
+        'IS Central Services Administration'
       );
     });
   });
