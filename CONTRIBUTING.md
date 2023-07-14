@@ -41,6 +41,6 @@ License
 
 Apache License 2.0
 
-(c) William Belle, 2019-2022.
+(c) William Belle, 2019-2023.
 
 See the [LICENSE](LICENSE) file for more details.
