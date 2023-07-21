@@ -1,6 +1,13 @@
 Changelog
 =========
 
+### v3.0.3 / 2023-07-21
+
+  - Update Github Actions coveralls to v2
+  - Test against Node.js 20
+  - Test against Node.js 19
+  - Fix tests after EPFL reorganization
+
 ### v3.0.2 / 2022-07-01
 
   - Update dependencies
