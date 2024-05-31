@@ -11,17 +11,13 @@ const buildUnitUrl = (unit, language) => {
   return UNITS_URL + '?q=' + unit + '&hl=' + language;
 };
 
-const buildCodeUrl = (code, language) => {
-  return UNITS_URL + '?acro=' + code + '&hl=' + language;
-};
-
 const findUnitByName = (unit, language = 'en') => {
   const url = buildUnitUrl(unit, language);
   return getUnit(url);
 };
 
 const findUnitByCode = (code, language = 'en') => {
-  const url = buildCodeUrl(code, language);
+  const url = buildUnitUrl(code, language);
   return getUnit(url);
 };
 
