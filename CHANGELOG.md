@@ -1,6 +1,11 @@
 Changelog
 =========
 
+### v4.0.1 / 2024-05-31
+
+  - Fix findUnitByCode()
+  - Test against Node.js 22
+
 ### v4.0.0 / 2023-12-01
 
   - Drop support for Node < 16
